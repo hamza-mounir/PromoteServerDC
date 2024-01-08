@@ -1,4 +1,4 @@
-# Promote Server to Domain Controller PowerShell Script
+# PromoteServerDC PowerShell Script
 
 This PowerShell script, created by Hamza Mounir, is designed to promote a server to a domain controller. It's a comprehensive script that takes into account several parameters, some of which are mandatory while others are optional.
 
@@ -7,10 +7,10 @@ This PowerShell script, created by Hamza Mounir, is designed to promote a server
 - LinkedIn: [https://www.linkedin.com/in/hamzamounir/](https://www.linkedin.com/in/hamzamounir/)
 
 ## Synopsis
-The script promotes a server to a domain controller.
+The PromoteServerDC script promotes a server to a domain controller.
 
 ## Description
-The script uses several parameters to promote a server to a domain controller. Some parameters are mandatory while others are optional. The password parameter refers to the Directory Services Restore Mode (DSRM) password.
+The PromoteServerDC script uses several parameters to promote a server to a domain controller. Some parameters are mandatory while others are optional. The password parameter refers to the Directory Services Restore Mode (DSRM) password.
 
 ## Parameters
 - `mode`: The domain and forest mode. You can enter either the mode name or its corresponding number. This parameter is **mandatory**.
@@ -21,8 +21,8 @@ The script uses several parameters to promote a server to a domain controller. S
 
 ## Example
 ```powershell
-.\PromoteServer.ps1 -mode 7 -domain company.local
-.\PromoteServer.ps1 -mode <DomainAndForestMode> -domain <YourDomain> -databasepath <DatabasePath> -sysvolpath <SysvolPath> -netbiosname <NetBIOSName>
+.\PromoteServerDC.ps1 -mode 7 -domain company.local
+.\PromoteServerDC.ps1 -mode <DomainAndForestMode> -domain <YourDomain> -databasepath <DatabasePath> -sysvolpath <SysvolPath> -netbiosname <NetBIOSName>
 ```
 Replace `<DomainAndForestMode>`, `<YourDomain>`, `<DatabasePath>`, `<SysvolPath>`, and `<NetBIOSName>` with your actual values.
 
